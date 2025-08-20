@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+@font-face {
+  font-family: 'Cattedrale';
+  src: url('/Cattedrale-Demo-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple';
+  src: url('/SF-Pro.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Regular';
+  src: url('/SF-Pro-Display-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+
+body {
+  background-color: #070708;
+  color: white;
+  font-family: 'Apple', sans-serif; /* Fuente por defecto */
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Clases personalizadas para tipografías */
+.font-sf-regular {
+  font-family: 'SF Regular', sans-serif !important;
+}
+
+.font-apple {
+  font-family: 'Apple', sans-serif !important;
+}
+
+@theme inline {
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+    /* Animación de distorsión líquida para el navbar */
+  @keyframes liquidDistort {
+    0% {
+      transform: skew(0deg, 0deg) scale(1);
+    }
+    25% {
+      transform: skew(-0.5deg, 0.2deg) scale(1.005);
+    }
+    50% {
+      transform: skew(-1deg, 0.5deg) scale(1.01);
+    }
+    75% {
+      transform: skew(-0.5deg, 0.2deg) scale(1.005);
+    }
+    100% {
+      transform: skew(0deg, 0deg) scale(1);
+    }
+  }
+}
+
+/* Clase para el título responsive */
+.responsive-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.2em;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .responsive-title {
+    font-size: 3rem;
+    letter-spacing: 0.9em;
+    text-indent: 0.5em;
+  }
+}
+
+/* Clases para hacer el título responsive */
+.morphing-text-mobile {
+  font-size: 7rem !important;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.title-container-mobile {
+  margin-bottom: 4rem !important;
+  letter-spacing: 0.3em !important;
+  transition: margin-bottom 0.5s ease-in-out, letter-spacing 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .morphing-text-mobile {
+    font-size: 16rem !important;
+  }
+  
+  .title-container-mobile {
+    margin-bottom: 12rem !important;
+    letter-spacing: 0.9em !important;
+  }
+}
