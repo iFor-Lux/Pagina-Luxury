@@ -37,7 +37,7 @@ export default function ServicesSection() {
             href="#"
             iconColor="#2563eb"
                           image={
-                <img src="https://ch4d.me/Luxury/src/svg/1.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
+                <img src="/1.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
               }
           />
           <BentoCard
