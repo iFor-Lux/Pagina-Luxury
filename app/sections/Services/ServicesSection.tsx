@@ -37,7 +37,7 @@ export default function ServicesSection() {
             href="#"
             iconColor="#2563eb"
                           image={
-                <img src="/1.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
+                <img src="/2.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
               }
           />
           <BentoCard
@@ -51,7 +51,7 @@ export default function ServicesSection() {
             href="#"
             iconColor="#dc2626"
                           image={
-                <img src="https://ch4d.me/Luxury/src/svg/3.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
+                <img src="/3.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
               }
           />
           <BentoCard
@@ -65,7 +65,7 @@ export default function ServicesSection() {
             href="#"
             iconColor="#16a34a"
                           image={
-                <img src="https://ch4d.me/Luxury/src/svg/4.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
+                <img src="/4.svg" alt="Atención Exclusiva" className="w-4/4 h-3/4 object-contain mx-auto -mt-20" />
               }
           />
           <BentoCard
@@ -79,7 +79,7 @@ export default function ServicesSection() {
             href="#"
             iconColor="#9333ea"
                           image={
-                <img src="https://ch4d.me/Luxury/src/svg/2.svg" alt="Atención Exclusiva" className="w-5/4 h-6/4 object-contain mx-auto -mt-20" />
+                <img src="/1.svg" alt="Atención Exclusiva" className="w-5/4 h-6/4 object-contain mx-auto -mt-20" />
               }
           />
         </BentoGrid>
